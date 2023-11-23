@@ -1,0 +1,21 @@
+version: '3'
+services:
+  clash_server:  
+    image: clash_server
+    container_name: clash_server
+    volumes:
+      - ./data:/var/clash_request/data
+      - ./config.json:/var/clash_request/config.json
+    ports:
+      - 5001:5001
+#     environment:
+#       - HTTP_PROXY=http://clash:7890
+#       - HTTPS_PROXY=http://clash:7890
+#     networks:
+#       - clash_client_proxy_net
+
+# networks:
+#   clash_client_proxy_net:
+#     external: true
+
+  

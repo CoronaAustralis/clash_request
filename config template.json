@@ -1,0 +1,8 @@
+{
+    "requestUrl": "",
+    "requestToken": "",
+    "requestInterval": "0 0 0,8,16 * * ?",
+    "subsrciptionPath": "./data/sub/sub.yaml",
+    "port": 5001,
+    "logPath": "./data/log/server.log"
+  }
